@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.regform{
+
+text-align:left;
+background-color:#9ACD32;
+border : 3px outset black;
+height : 700px;
+width : 50%;
+margin-left : 450px;
+margin-top : 100px;
+padding-left:80px;
+padding-right:30px;
+padding-top:50px;
+padding-bottom:50px;
+}
+.submitbutton{
+
+
+border : 3px outset black;
+width : 30%;
+height:35px;
+background-color : white;
+font-size:20px;
+text-align:center;
+margin-left:300px;
+}
+
+.textbox{
+margin: 0 auto;
+display:block;
+height:30px;
+width:200px;
+
+}
+
+.feild{
+font-size:20px;
+font-weight:bold;
+ 
+}
+</style>
+<body>
+
+<h1><center>Player Addition Form</center></h1>
+
+<form action="AddPlayer">
+<div class="regform">
+
+<label class="feild"> Player Id : </label>
+<input type="text" name="id" class="textbox"><br><br>
+<label class="feild">Player Name : </label>
+<input type="text" name="name" class="textbox"><br><br>
+<label class="feild">Number of Matches Played : </label>
+<input type="text" name="matches_played" class="textbox"><br><br>
+<label class="feild">Total Runs Scored : </label>
+<input type="text" name="total_runs" class="textbox"><br><br>
+<label class="feild">Enter Total Wickets Taken : </label>
+<input type="text" name="wickets_taken" class="textbox"><br><br>
+<label class="feild">Enter Number Of out on Zero Score : </label>
+<input type="text" name="out_on_zero" class="textbox"><br><br>
+<label class="feild">Enter Player Type : </label>
+<select name="player_type" class="textbox">
+<option value="batsman">Batsman</option>
+<option value="bowler">Bowler</option>
+<option value="wicketKeeper">Wicket Keeper</option>
+
+</select>
+<br><br>
+
+<button type="submit" class="submitbutton">Add</button>
+</div>
+</form>
+
+</body>
+</html>
